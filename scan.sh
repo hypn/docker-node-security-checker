@@ -17,8 +17,8 @@ else
         | grep -v 'Run `snyk wizard` to explore remediation options.' \
         | grep -v 'Run `snyk wizard` to address these issues.' \
         | grep -v 'Next steps:' \
-        | grep -v '- Run `snyk monitor` to be notified about new related vulnerabilities.' \
-        | grep -v '- Run `snyk test` as part of your CI/test.'
+        | grep -v 'Run `snyk monitor` to be notified about new related vulnerabilities.' \
+        | grep -v 'Run `snyk test` as part of your CI/test.'
 fi
 
 echo 'NSP security check:'
