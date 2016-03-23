@@ -21,6 +21,11 @@ else
         | grep -v 'Run `snyk test` as part of your CI/test.'
 fi
 
+echo 'Checking for @azer unpublished modules:'
+echo '---------------------------------------'
+snyk test-unpublished
+echo
+
 echo 'NSP security check:'
 echo '--------------------'
 nsp check
